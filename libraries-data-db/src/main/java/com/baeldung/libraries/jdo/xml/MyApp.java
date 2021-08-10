@@ -32,8 +32,8 @@ public class MyApp {
         // persist Person object using PMF created by properties file
         definePersistenceManagerFactoryUsingPropertiesFile("META-INF\\datanucleus.properties");
         Person person = new Person(654321, "bealdung", "author");
-        person.getPhoneNumbers().add("123456789");
-        person.getPhoneNumbers().add("987654321");
+//        person.getPhoneNumbers().add("123456789");
+//        person.getPhoneNumbers().add("987654321");
         persistObject(person);
         queryPersonsInXML();
         closePersistenceManager();

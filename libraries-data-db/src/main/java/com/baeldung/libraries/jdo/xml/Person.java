@@ -13,7 +13,16 @@ public class Person {
     private String firstName;
     private String lastName;
 
-    private List phoneNumbers = new ArrayList();
+//    private List<String> phoneNumbers = new ArrayList<String>();
+    private String phoneNumbers = "";
+
+    public String getPhoneNumbers() {
+        return phoneNumbers;
+    }
+
+    public void setPhoneNumbers(String phoneNumbers) {
+        this.phoneNumbers = phoneNumbers;
+    }
 
     public Person(long personNum, String firstName, String lastName) {
         super();
@@ -46,12 +55,12 @@ public class Person {
         this.lastName = lastName;
     }
 
-    public List getPhoneNumbers() {
-        return phoneNumbers;
-    }
+//    public List<String> getPhoneNumbers() {
+//        return phoneNumbers;
+//    }
 
-    public void setPhoneNumbers(List phoneNumbers) {
-        this.phoneNumbers = phoneNumbers;
-    }
+//    public void setPhoneNumbers(List<String> phoneNumbers) {
+//        this.phoneNumbers = phoneNumbers;
+//    }
 
 }
